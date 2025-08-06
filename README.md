@@ -1,23 +1,33 @@
-# Create Project Main  
-django-admin startproject demo  
+# Create Project Main 
+`django-admin startproject demo`
 
-# Create App  
-python manage.py startapp myApp  
+# Create App 
+`py manage.py startapp myApp`
 
-# Link the project  
-In the `settings.py` file inside the main project folder,  
-go to `INSTALLED_APPS` and add your newly created app name.  
+# link the project 
 
-# Step in the new app  
-Create `urls.py`  
-In `views.py`, add your view functions  
-Then link the new views in the newly created `urls.py` file  
+*** in the setting.py main folder under of ISNTALLED_APPS add your newly add app name **
 
-```python
-# myApp/urls.py
-from django.urls import path  
-from . import views  
+## Step in the New app
 
-urlpatterns = [  
-    path("", views.Home, name="home")  
-]
+create urls.py
+In views.py add functions
+add the new views in the newly urls.py
+
+## from django.urls import path
+
+` from . import views 
+ urlpatterns = [
+     path("", views.Home, name="home")
+ ]
+`
+
+proced on the urls.py under of the main project 
+and add the urlpatterns of the new app.
+
+## py manage.py runserver
+
+` add folder in the app name
+templates inside of this folder
+add html files.
+`
