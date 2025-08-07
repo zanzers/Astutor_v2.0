@@ -31,3 +31,19 @@ and add the urlpatterns of the new app.
 templates inside of this folder
 add html files.
 `
+
+## Migrate DB
+
+` py manage.py migrate
+`
+
+## Create Admin
+
+` py manage.py createsuperuser
+`
+
+## Reverse Engineer MySql
+
+` py manage.py inspectdb > myApp/models.py
+`
+
